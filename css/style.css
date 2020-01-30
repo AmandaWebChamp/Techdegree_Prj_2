@@ -1,0 +1,525 @@
+
+
+
+/* Global Layout Set-up */
+
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-size: 26px;
+    color: #000;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2b3135;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 24px;
+    color: #2b3135;
+}
+
+p {
+    color: #3d464c;
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+
+/* Media Queries */
+@media (min-width: 320px) {
+    .wrapper {
+        margin: 14px;
+    }
+    
+    /* Link */
+    .nav {
+        font-weight: 700;
+        list-style-type: none;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        padding: 0;
+    }
+    
+    .nav .name {
+        display: block;
+        margin-right:auto;
+        font-size: 26px;
+        margin-top: 50px;
+        font-family: 'Nunito', sans-serif;
+    }
+    
+    .nav li {
+        margin-top: 8px;
+        padding: 5px 10px 0 10px;
+        color: #2b3135;
+    }
+    
+    .nav a {
+        transition: all .5s;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #000;
+    }
+    
+    a:hover {
+        color: #e0ab26;
+    }
+    
+    /* Header */
+    header {
+        width: 100%;
+        padding: 0 0 20px 0px; 
+        box-sizing: border-box;
+    }
+    
+    .header-top {
+        width: 100%;
+        background: #fff;
+        min-height: 30px;
+        text-align: center;
+    }
+    
+    .header-bottom img {
+        width: 75%;
+    }
+    
+    /* COPYAREA */
+    
+    .copyarea {
+        margin: 0 0 20px 0; 
+        padding-bottom: 30px;   
+    }
+    
+    .copyarea div.card {
+        text-align: center;
+        padding: 0;
+    }
+    
+    .copyarea p {
+        margin: 0 30px 26px 30px;
+    }
+    
+    .card img {
+     width: 100%;
+     margin: 0; 
+    }
+    
+    .portfolio {
+        padding-bottom: 30px;
+    }
+    
+    /*COPY BOTTOM */
+    .copy-bottom {
+        margin: 30px 0 30px 0; 
+        padding: 40px 0 20px 0;
+    }
+    
+    .copy-bottom p {
+        margin: 0 30px 0 30px;
+    }
+    
+    .copy-bottom #myinfo li {
+        list-style-type: none;
+        padding: 10px 0 10px 0;
+        color: #2b3135;
+    }
+    
+    /* FOOTER */
+    footer {
+        width: 100%;
+        height: 25%;
+        border-top: #ededed solid 2px;
+        margin: 20px 0 20px 0;
+        padding: 30px 0 30px 0;
+    }
+    footer .nav-footer {
+        list-style-type: none;
+        margin: 0;
+    }
+    
+    footer .nav-footer #footer-name {
+        font-size: 20px;
+        font-family: 'Nunito', sans-serif;
+        font-weight: bold;
+        float: left;
+        margin-left: -20px;
+        margin-top: -3px;
+    }
+    
+    footer .nav-footer #top-anchor {
+        float: right;
+        font-weight: bold;
+        margin-right: 16px;
+        text-transform: uppercase;
+    }
+
+}
+
+ 
+
+
+@media (min-width: 768px) {
+
+.wrapper {
+    margin: 40px;
+}
+
+/* HEADER */
+header {
+    width: 100%;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+.header-top {
+    width: 100%;
+    background: #fff;
+    min-height: 30px;
+    text-align: center;
+    padding-bottom: 40px;
+    margin-bottom: 10px;
+}
+
+.nav {
+    font-weight: 700;
+    list-style-type: none;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    padding: 0;
+}
+
+.nav .name {
+    display: block;
+    font-size: 26px;
+    margin: 0 50px 0 50px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.nav li {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 5px 10px 0 10px;
+    color: #2b3135;
+    text-transform: uppercase;
+}
+
+
+.nav a {
+    transition: all .5s;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    color: #e0ab26;
+}
+
+.header-bottom {
+    padding: 0 0 100px 0;
+    margin: 10px 0 10px 0;
+}
+
+.header-bottom #intro {
+    float: left;
+    width: 50%;
+    margin-top: 0;
+    text-align: left;
+}
+
+.header-bottom .profile-image {
+    float: right;
+}
+
+.header-bottom img {
+    width: 40%;
+}
+
+/* COPYAREA */
+
+.copyarea {
+    margin: 0 0 20px 0; 
+    padding-bottom: 30px;   
+}
+
+.copyarea .skills {
+    justify-content: space-between;
+    margin: 0;
+    display: block;
+
+
+}
+.copyarea div.card {
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+    padding: 0;
+    width: 45%;
+}
+
+.copyarea p {
+    margin: 0 30px 26px 30px;
+}
+
+.card img {
+ width: 100%;
+ margin: 0; 
+}
+
+.portfolio {
+    padding-bottom: 30px;
+    text-transform: uppercase;
+}
+
+/*COPY BOTTOM */
+.copy-bottom {
+    margin: 30px 0 30px 0; 
+    padding: 40px 0 20px 0;
+    font-size: 20px;
+}
+
+.copy-bottom p {
+    
+    margin: 10px 30px 0 30px;
+    padding: 30px 28px 20px 28px;
+    text-align: center;
+}
+
+.copy-bottom #myinfo li {
+    list-style-type: none;
+    padding: 10px 0 10px 0;
+    color: #2b3135;
+}
+
+/* FOOTER */
+footer {
+    width: 100%;
+    height: 25%;
+    border-top: #ededed solid 2px;
+    margin: 20px 0 20px 0;
+    padding: 30px 0 30px 0;
+}
+footer .nav-footer {
+    list-style-type: none;
+    margin: 0;
+}
+
+footer .nav-footer #footer-name {
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    float: left;
+    margin-left: -20px;
+    margin-top: -3px;
+}
+
+footer .nav-footer #top-anchor {
+    float: right;
+    font-weight: bold;
+    margin-right: 16px;
+    text-transform: uppercase;
+}
+}
+
+
+@media (min-width: 1024px) {
+
+    .wrapper {
+        margin: 30px 70px 0 70px;
+    }
+   
+    /* Section Styles */
+    header {
+        width: 100%;
+        padding: 0 0 20px 0px; 
+        box-sizing: border-box;
+    }
+    
+    .header-top {
+        width: 100%;
+        background: #fff;
+        min-height: 30px;
+        padding: 30px 0;
+        text-align: center;
+    }
+    
+    .nav {
+        display: flex;
+        justify-content: space-around;
+        font-weight: 700;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .nav .name {
+        display: block;
+        margin-right:auto;
+        margin-left: -10px;
+        font-size: 26px;
+        margin-top: -5px;
+        font-family: 'Nunito', sans-serif;
+    }
+    
+    .nav li {
+        margin-top: 8px;
+        padding: 5px 20px 0 10px;
+    }
+    
+    .nav a {
+        transition: all .5s;
+    }
+    
+    .nav a:hover {
+        color: #e0ab26;
+    }
+    
+    .nav #contact-pg {
+        padding-right: 0;
+        margin-right: 0;
+    }
+
+    .header-bottom{
+        display: block;
+        width: auto;
+        margin-top: 10px;
+        padding-top: 30px;
+    }
+
+    .header-bottom #intro {
+        float: left;
+        width: 55%;
+        margin-top: 0;
+        font-size: 24px;
+        text-align: left;
+    }
+    
+    .header-bottom #profile-shot {
+        margin: 50px;
+        float: right;
+    }
+
+    .header-bottom img {
+        width: 40%;
+    }
+
+    /* COPYAREA */
+    
+    .copyarea {
+        margin: 0; 
+        padding-bottom: 30px;   
+    }
+    
+    .copyarea .skills {
+        justify-content: space-between;
+        margin: 0 0 0 0;
+        padding: 0 10px 0 0;
+        display: block;
+    }
+
+    .copyarea div.card {
+        /*display: inline-block;*/
+        float: left;
+        text-align: center;
+        margin: 0;
+        padding: 0 25px 0 0;
+        width: 32%;
+    }
+
+    /*.copyarea .card .col-1 {
+        margin: 0;
+        padding-left: 0;
+    } */
+    
+    /*.copyarea .card .col-3 {
+        margin-right: 0;
+        padding-right: 0;
+    }*/
+
+    .copyarea .card p {
+        margin: 0;
+        padding: 0 0 70px 0;
+    }
+    
+    .card img {
+     width: 100%;
+     margin: 0;
+     padding: 0 0 0; 
+    }
+    
+    .portfolio {
+        padding-bottom: 30px;
+        text-transform: uppercase;
+    }
+    
+    /*COPY BOTTOM */
+    .copy-bottom {
+        margin: 30px 0 30px 0; 
+        padding: 40px 0 20px 0;
+        font-size: 20px;
+    }
+    
+    .copy-bottom p {
+        
+        margin: 10px 30px 0 30px;
+        padding: 30px 28px 20px 28px;
+        text-align: center;
+    }
+    
+    .copy-bottom #myinfo li {
+        list-style-type: none;
+        padding: 10px 0 10px 0;
+        color: #2b3135;
+    }
+    
+    /* FOOTER */
+    footer {
+        width: 100%;
+        height: 25%;
+        border-top: #ededed solid 2px;
+        margin: 20px 0 20px 0;
+        padding: 30px 0 30px 0;
+    }
+    footer .nav-footer {
+        list-style-type: none;
+        margin: 0;
+    }
+    
+    footer .nav-footer #footer-name {
+        font-size: 20px;
+        font-family: 'Nunito', sans-serif;
+        font-weight: bold;
+        float: left;
+        margin-left: -20px;
+        margin-top: -3px;
+    }
+    
+    footer .nav-footer #top-anchor {
+        float: right;
+        font-weight: bold;
+        margin-right: 16px;
+        text-transform: uppercase;
+    }
+    
+}
